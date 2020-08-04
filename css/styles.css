@@ -561,10 +561,15 @@ fill: #AFB1B8;
 
 .conteiner-footer {
 display: flex;
+align-items: baseline;
 }
 
 .footer-address {
 margin-right: 69px;
+}
+
+.footer-address-section {
+width: 231px;
 }
 
 .footer-logo {
@@ -804,10 +809,37 @@ overflow: hidden;
 
 /*Формы*/
 .user-email{
-
+width: 358px;
+height: 50px;
+left: 815px;
+top: 2779px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+box-sizing: border-box;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: #2F303A;
+display: block;  
+padding-left: 10px;
+margin-right: 12px;
 }
 
-.feedback {
-display: block;
+.user-email:focus {
+outline: none;
+}
 
+.user-email:focus:required:valid:not(:placeholder-shown) {
+border: 1px solid green;
+}
+  
+.user-email:focus:required:invalid:not(:placeholder-shown) {
+border: 1px solid red;
+}
+
+.mailing-form {
+display: flex;
+}
+
+.button-form {
+display: flex;
+padding-left: 29px;
 }
