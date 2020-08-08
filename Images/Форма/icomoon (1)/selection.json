@@ -4,7 +4,7 @@
     {
       "icon": {
         "paths": [
-          "M200.4 486.57l-7.043-6.719-105.819 100.237 372.826 355.664 783.274-747.217-105.124-100.284-678.147 646.318-259.967-247.999z"
+          "M270.133 529.18l-4.695-4.48-70.546 66.825 248.551 237.109 522.183-498.145-70.083-66.856-452.098 430.877-173.311-165.331z"
         ],
         "attrs": [
           {
@@ -13,15 +13,15 @@
             "strokeLinejoin": "miter",
             "strokeLinecap": "butt",
             "strokeMiterlimit": "4",
-            "strokeWidth": 20.480000000000004
+            "strokeWidth": 13.653333333333334
           }
         ],
-        "width": 1331,
+        "width": 1092,
         "isMulticolor": false,
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "Vector"
+          "icon-check"
         ]
       },
       "attrs": [
@@ -31,17 +31,17 @@
           "strokeLinejoin": "miter",
           "strokeLinecap": "butt",
           "strokeMiterlimit": "4",
-          "strokeWidth": 20.480000000000004
+          "strokeWidth": 13.653333333333334
         }
       ],
       "properties": {
-        "order": 6,
+        "order": 7,
         "id": 0,
-        "name": "Vector",
+        "name": "icon-check",
         "prevSize": 32
       },
       "setIdx": 0,
-      "setId": 3,
+      "setId": 4,
       "iconIdx": 0
     }
   ],

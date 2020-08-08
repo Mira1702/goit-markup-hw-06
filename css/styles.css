@@ -927,10 +927,11 @@ font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
 color: #757575;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-transform: translateY(-38px);
+transform: translateY(-40px);
+}
+
+.modal-form-label-svg {
 display: flex;
-flex-direction: column;
 }
 
 .modal-form-input{
@@ -952,6 +953,9 @@ border-radius: 4px;
 height: 120px;    
 margin-bottom: 28px;
 resize: none;
+padding-left: 16px;
+padding-top: 12px;
+
 }
 
 /*.modal-form-input:focus+.modal-form-label,
@@ -970,13 +974,21 @@ outline: none;
 .modal-form-input:not(:placeholder-shown),
 .modal-form-message:not(:placeholder-shown) {
 border: 1px solid #2196F3;
+fill: #2196F3;
+}
+
+.modal-form-message-title {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: #757575;
 }
 
 .modal-form-message::placeholder {
-position: absolute;
-top: -50%;
-left: 0;
-transform: translateY(50%);
+color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-form-message:focus::placeholder {
@@ -1027,9 +1039,39 @@ margin-right: auto;
 .modal-form-svg {
 width: 12px;
 height: 12px;
-transform: translateY(30px);
-
+margin-left: 15px;
+transform: translateY(-26px);
 }
+
+.modal-form-checkbox {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+.modal-form-custom-checkbox {
+display: inline-block;
+width: 16px;
+height: 15px;
+background: #FFFFFF;
+border: 2px solid #212121;
+margin-right: 8px;
+}
+
+.modal-form-checkbox:checked+.modal-form-custom-checkbox {
+background: #2196F3;
+border-radius: 2px;
+border: 2px solid #2196F3;
+}
+
+/*.modal-form-checkbox:checked+.modal-form-option-span {
+text-decoration: underline;
+}*/
 
 /*.is-hidden {
 opacity: 0;
