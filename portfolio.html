@@ -159,7 +159,7 @@
         <div class="footer-text footer-address">
         <a class="header-link link footer-logo" href="./index.html" aria-label="Web Studio"> <span class="web">Web</span> <span class="studio">Studio</span></a>
              
-        <address> 
+        <address class="footer-address-section"> 
          <a class="navigation-link-footer link footer-text footer-link" href="https://goo.gl/maps/kJYrJdaGzyBdFyBx5" target="_blank">г.Киев, пр-т Леси Украинки,26</a>           
          <a class="navigation-mail link footer-link" href="E-mail:info@example.com">info@example.com</a> 
          <a class="navigation-tel link footer-link" href="tel:+380991111111">+38 096 111 11 11</a>          
@@ -199,15 +199,25 @@
          </a>
         </li>
        </ul>
-       </div>
-     
+       </div>       
+
       <!--Обратная связь-->
-      <p>
-       <b class="footer-text footer-text-item">Подпишитесь на рассылку</b>
-      </p>
-      <button type="button" class="button">Подписаться</button>   
+      
+        <form action="#" method="GET">
+          <p>
+            <b class="footer-text footer-text-item">Подпишитесь на рассылку</b>
+           </p>
+           <section class="mailing-form"> 
+            <input type="email" name="user-email" placeholder="E-mail" class="user-email" required/>
+            <button type="submit" class="button button-form">Подписаться
+              <svg widht="24" height="24">
+                <use href="./Images/sprite.svg#iconsend"></use>
+              </svg>
+            </button>
+           </section>            
+        </form>           
     </div>   
-   </footer>  
+   </footer>   
      
 </body>
 </html>
