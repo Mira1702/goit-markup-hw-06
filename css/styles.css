@@ -101,7 +101,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 
-.btn {
+.modal-btn {
 font-family: var(--main-font);
 font-style: normal;
 font-weight: bold;
@@ -465,7 +465,7 @@ margin-top: 0px;
 margin-bottom: 20px;
 }
 
-.btn {
+.modal-btn {
 display: block;
 margin-left: auto;
 margin-right: auto;
@@ -927,11 +927,12 @@ font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
 color: #757575;
-transform: translateY(-40px);
+transform: translateY(-37px);
 }
 
 .modal-form-label-svg {
 display: flex;
+height: 0;
 }
 
 .modal-form-input{
@@ -977,6 +978,11 @@ border: 1px solid #2196F3;
 fill: #2196F3;
 }
 
+.modal-form-input:focus+.modal-form-label-svg {
+fill: var(--accent-colour);
+color: var(--accent-colour);
+}
+
 .modal-form-message-title {
 font-family: Roboto;
 font-style: normal;
@@ -985,6 +991,7 @@ font-size: 12px;
 line-height: 14px;
 letter-spacing: 0.01em;
 color: #757575;
+margin-bottom: 5px;
 }
 
 .modal-form-message::placeholder {
@@ -1037,10 +1044,10 @@ margin-right: auto;
 }
 
 .modal-form-svg {
-width: 12px;
-height: 12px;
+width: 18px;
+height: 18px;
 margin-left: 15px;
-transform: translateY(-26px);
+transform: translateY(-28px);
 }
 
 .modal-form-checkbox {
@@ -1067,6 +1074,33 @@ margin-right: 8px;
 background: #2196F3;
 border-radius: 2px;
 border: 2px solid #2196F3;
+background-image: url(../Images/Форма/icon-check.svg);
+background-size: contain;
+background-origin: border-box;
+}
+
+.modal-close-btn {
+position: absolute;
+top: 8px;
+right: 8px;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background-color: transparent;
+border: 1px solid rgba(33, 33, 33, 0.2);
+cursor: pointer;
+/*background-image: url(../Images/Форма/close-black.svg);
+background-repeat: no-repeat;
+background-position: center;*/
+}
+
+.modal-close-btn-svg {
+width: 18px;
+height: 18px;
+}
+
+.modal-close-btn:hover {
+fill: #2196F3;
 }
 
 /*.modal-form-checkbox:checked+.modal-form-option-span {
