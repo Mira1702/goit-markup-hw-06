@@ -933,6 +933,9 @@ transform: translateY(-37px);
 .modal-form-label-svg {
 display: flex;
 height: 0;
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input{
@@ -944,6 +947,9 @@ display: block;
 width: 100%;
 height: 40px;
 padding-left: 42px;
+transition-property: border;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-message {    
@@ -956,7 +962,9 @@ margin-bottom: 28px;
 resize: none;
 padding-left: 16px;
 padding-top: 12px;
-
+transition-property: border;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*.modal-form-input:focus+.modal-form-label,
@@ -996,6 +1004,9 @@ margin-bottom: 5px;
 
 .modal-form-message::placeholder {
 color: rgba(117, 117, 117, 0.5);
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-message:focus::placeholder {
@@ -1068,6 +1079,9 @@ height: 15px;
 background: #FFFFFF;
 border: 2px solid #212121;
 margin-right: 8px;
+transition-property: background;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-checkbox:checked+.modal-form-custom-checkbox {
@@ -1077,6 +1091,10 @@ border: 2px solid #2196F3;
 background-image: url(../Images/Форма/icon-check.svg);
 background-size: contain;
 background-origin: border-box;
+transition-property: background;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-close-btn {
