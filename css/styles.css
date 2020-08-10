@@ -441,7 +441,6 @@ margin-right: 85px;
 
 .address-link {
 display: flex;
-
 }
 
 
@@ -728,7 +727,8 @@ margin-bottom: 30px;
 .address-link-svg {
 width: 16px;
 height: 11px; 
-fill: #757575;  
+fill: #757575;
+vertical-align: middle;
 }
     
 .social-link-svg {
@@ -1064,10 +1064,14 @@ width: 18px;
 height: 18px;
 margin-left: 15px;
 transform: translateY(-28px);
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus+.modal-form-label+.modal-form-svg {
 fill: #2196F3;
+
 }
 
 .modal-form-checkbox {
@@ -1123,6 +1127,10 @@ background-position: center;*/
 .modal-close-btn-svg {
 width: 18px;
 height: 18px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
 }
 
 .modal-close-btn:hover {
